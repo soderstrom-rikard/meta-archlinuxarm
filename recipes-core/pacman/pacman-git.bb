@@ -4,7 +4,7 @@ inherit autotools gettext
 
 #require 
 DEPENDS += "openssl libarchive asciidoc"
-RDEPENDS += "asciidoc"
+RDEPENDS_${PN} += "asciidoc"
 
 LICENSE = "GPLv2"
 
