@@ -3,7 +3,7 @@ DESCRIPTION="Development build of pacman"
 inherit autotools gettext
 
 #require 
-DEPENDS += "openssl libarchive asciidoc"
+DEPENDS += "openssl libarchive asciidoc curl"
 RDEPENDS_${PN} += "asciidoc perl bash"
 
 LICENSE = "GPLv2"
