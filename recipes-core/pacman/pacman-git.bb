@@ -83,4 +83,6 @@ FILES_${PN} += "\
   /usr/share/pacman/PKGBUILD-split.proto \
   /usr/share/pacman/PKGBUILD.proto \
   /usr/share/pacman/proto.install \
+  /usr \
+  /usr/bin \
 "
