@@ -12,10 +12,11 @@ LIC_FILES_CHKSUM = "\
 file://COPYING;md5=751419260aa954499f7abaabaa882bbe \
 "
 
-SRC_URI      = "git://projects.archlinux.org/pacman.git;protocol=git;branch=master"
-SRCREV       = "578035075108a90d20f084f077badf05d1c8527c"
-S            = "${WORKDIR}/git"
-EXTRA_OECONF = ""
+PV              = "5.0rc1.git${SRCPV}"
+SRC_URI         = "git://projects.archlinux.org/pacman.git;protocol=git;branch=master"
+SRCREV_pn-${PN} = "fa72c2cdc2682eb55edd0d8b19fb1eba4e061670"
+S               = "${WORKDIR}/git"
+EXTRA_OECONF    = ""
 
 do_configure_prepend() {
   cd ${WORKDIR}/git
