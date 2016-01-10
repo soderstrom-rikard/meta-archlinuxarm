@@ -1,0 +1,11 @@
+--- pacman/configure.ac.orig	2016-01-07 23:21:55.032245399 -0800
++++ pacman/configure.ac	2016-01-07 23:51:40.489611212 -0800
+@@ -59,6 +59,8 @@
+ AC_CONFIG_AUX_DIR([build-aux])
+ AC_REQUIRE_AUX_FILE([tap-driver.sh])
+ 
++abs_aux_dir=`cd $ac_aux_dir && pwd`
++AC_SUBST(MKINSTALLDIRS, [$abs_aux_dir"/mkinstalldirs"])
+ AC_CANONICAL_HOST
+ AM_INIT_AUTOMAKE([1.11 foreign])
+ AM_SILENT_RULES([yes])

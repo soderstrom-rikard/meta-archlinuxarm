@@ -23,3 +23,7 @@ do_configure_prepend() {
   ./autogen.sh
   cd -
 }
+
+SRC_URI += "\
+  file://configure.ac.patch \
+"
